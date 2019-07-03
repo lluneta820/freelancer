@@ -1,6 +1,8 @@
 :root{
   --primario:#FFC187;
+  --secundario: #0097A7;
   --oscuro: #212121;
+  --anchopantalla: 1000px
 
 }
 
@@ -18,11 +20,19 @@ body{
    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
    font-size: 1.6%rem;
 }
+h1,h2,h3{
+  margin: 0;
+
+}
+h2,h3{
+  text-align: center;
+}
+
 .site-header{
   background-color: white;
 }
 .site-header nav{
-  max-width: 1200px;
+  max-width: var(--anchopantalla);
   margin:  0 auto;
   padding: 2rem 0;
   display: flex;
@@ -53,6 +63,7 @@ body{
     margin-bottom: 0;
 
   }
+}
 
 .hero {
   height: 45rem;
@@ -61,12 +72,12 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: center;
   font-size: 2rem;
 }
 .hero::after {
   content: '';
-  background-color: rgba(0,0,0 .7);
+  background-color: rgba(0,0,0,.7);
   position: absolute;
   top: 0;
   left: 0;
@@ -74,8 +85,44 @@ body{
   bottom: 0;
 }
 .contenedor-hero{
+  color:black;
+  position: relative;
+  z-index: 1;
+  text-align: center;
 
 }
-.contenedor-hero {
+.contenedor-hero  i {
+  font-size: 4rem;
+  color: var(--primario);
 
+}
+.boton{
+  background-color: var(--secundario);
+  padding: 1rem 5rem;
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.9rem;
+  border-radius:.5rem;
+
+
+
+
+}
+
+.contenedor  {
+  max-width: var(--anchopantalla);
+  margin: 0 auto;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 1em;
+  -webkit-box-shadow: 3px 7px 66px -6px rgba(0,0,0,0.7);
+  -moz-box-shadow: 3px 7px 66px -6px rgba(0,0,0,0.7);
+   box-shadow: 3px 7px 66px -6px rgba(0,0,0,0.7);
+}
+
+.servicios{
+  margin-top:
 }
