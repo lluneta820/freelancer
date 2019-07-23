@@ -117,8 +117,14 @@ p{
   font-weight: 700;
   font-size: 1.9rem;
   border-radius:.5rem;
+  border: none;
 
 
+
+
+}
+.boton:hover{
+  cursor: pointer;
 
 
 }
@@ -205,12 +211,30 @@ form legend{
 }
 .campo{
   display: flex;
+  margin-bottom: 2rem;
+
 }
-.campo{
-  flex:  0 0 90px;
+.campo label{
+  flex:  0 0 60px;
+  padding-top: .5rem;
+  color: white;
 }
 .campo input{
   flex: 1;
   height: 4rem;
+
+}
+.campo textarea{
+  flex: 1;
+  height: 6rem;
+
+
+}
+w.100{
+  flex: 0 0 100%;
+}
+.enviar{
+  display: flex;
+  justify-content: center;
 
 }
